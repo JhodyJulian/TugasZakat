@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Zakat Lengkap - Zakat Fitrah, Mal, dan Profesi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Progress bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <h1><i class="fas fa-hand-holding-heart"></i> Kalkulator Zakat Lengkap</h1>
+            <p>Menghitung kewajiban zakat Fitrah, Mal, dan Profesi sesuai ketentuan syariat Islam</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-mosque"></i>
+                <span>KalkulatorZakat</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#intro"><i class="fas fa-info-circle"></i> Pengertian</a></li>
+                <li><a href="#calculators"><i class="fas fa-calculator"></i> Kalkulator</a></li>
+                <li><a href="#recipients"><i class="fas fa-hand-holding-usd"></i> Penerima</a></li>
+                <li><a href="#faq"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Kontak</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="intro">
+            <h2><i class="fas fa-info-circle"></i> Pengertian Zakat</h2>
+            <p>Zakat adalah harta yang wajib dikeluarkan oleh seorang muslim yang memenuhi syarat untuk diberikan kepada golongan yang berhak menerimanya. Zakat merupakan rukun Islam keempat dan memiliki kedudukan yang sangat penting dalam Islam.</p>
+            
+            <div class="verse">
+                "Dan dirikanlah shalat, tunaikanlah zakat, dan ruku'lah beserta orang-orang yang ruku'."
+                <div class="reference">QS. Al-Baqarah: 43</div>
+            </div>
+            
+            <h3><i class="fas fa-list-check"></i> Jenis-Jenis Zakat</h3>
+            <div class="zakat-types">
+                <div class="zakat-type-card">
+                    <h3><i class="fas fa-moon"></i> Zakat Fitrah</h3>
+                    <p>Zakat yang wajib dikeluarkan setiap muslim pada bulan Ramadan hingga sebelum shalat Idul Fitri.</p>
+                </div>
+                <div class="zakat-type-card">
+                    <h3><i class="fas fa-coins"></i> Zakat Mal</h3>
+                    <p>Zakat yang dikeluarkan dari harta kekayaan yang dimiliki setelah memenuhi syarat-syarat tertentu.</p>
+                </div>
+                <div class="zakat-type-card">
+                    <h3><i class="fas fa-briefcase"></i> Zakat Profesi</h3>
+                    <p>Zakat yang dikeluarkan dari penghasilan yang diperoleh dari profesi atau pekerjaan.</p>
+                </div>
+                <div class="zakat-type-card">
+                    <h3><i class="fas fa-seedling"></i> Zakat Pertanian</h3>
+                    <p>Zakat yang dikeluarkan dari hasil pertanian dan perkebunan ketika telah mencapai nisab.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="calculators">
+            <h2><i class="fas fa-calculator"></i> Kalkulator Zakat</h2>
+            <p>Gunakan kalkulator di bawah ini untuk menghitung kewajiban zakat Anda sesuai dengan jenis zakat yang ingin ditunaikan.</p>
+            
+            <div class="tab-container">
+                <div class="tabs">
+                    <div class="tab active" data-tab="fitrah"><i class="fas fa-moon"></i> Zakat Fitrah</div>
+                    <div class="tab" data-tab="mal"><i class="fas fa-coins"></i> Zakat Mal</div>
+                    <div class="tab" data-tab="profesi"><i class="fas fa-briefcase"></i> Zakat Profesi</div>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="content active" id="fitrah-content">
+                        <h3><i class="fas fa-moon"></i> Zakat Fitrah</h3>
+                        <p>Zakat fitrah adalah zakat yang wajib dikeluarkan oleh setiap muslim, baik laki-laki, perempuan, tua, muda, bahkan bayi yang lahir sebelum matahari terbenam pada hari terakhir bulan Ramadan.</p>
+                        
+                        <div class="verse">
+                            "Rasulullah SAW mewajibkan zakat fitrah (pada bulan Ramadhan) kepada manusia..."
+                            <div class="reference">HR. Al-Bukhari dan Muslim</div>
+                        </div>
+                        
+                        <h3><i class="fas fa-list-check"></i> Ketentuan Zakat Fitrah</h3>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Dibayarkan pada bulan Ramadan hingga sebelum shalat Idul Fitri</li>
+                            <li><i class="fas fa-check-circle"></i> Besarnya setara dengan 2.5 kg atau 3.5 liter makanan pokok</li>
+                            <li><i class="fas fa-check-circle"></i> Bisa dibayarkan dalam bentuk beras atau uang yang setara</li>
+                            <li><i class="fas fa-check-circle"></i> Wajib bagi setiap muslim yang mampu</li>
+                        </ul>
+                        
+                        <div class="note">
+                            <strong><i class="fas fa-lightbulb"></i> Catatan:</strong> Harga beras yang digunakan adalah harga beras yang biasa dikonsumsi sehari-hari.
+                        </div>
+                        
+                        <div class="calculator-box">
+                            <div class="calculator-header">
+                                <div class="calculator-title">
+                                    <i class="fas fa-calculator"></i>
+                                    <h3>Kalkulator Zakat Fitrah</h3>
+                                </div>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="familyMembers"><i class="fas fa-users"></i> Jumlah Anggota Keluarga</label>
+                                <input type="number" id="familyMembers" min="1" value="1">
+                            </div>
+                            <div class="input-group">
+                                <label for="ricePrice"><i class="fas fa-tag"></i> Harga Beras per Kg (Rp)</label>
+                                <input type="number" id="ricePrice" min="1000" value="15000">
+                            </div>
+                            <button onclick="calculateFitrah()"><i class="fas fa-calculator"></i> Hitung Zakat Fitrah</button>
+                            
+                            <div class="result" id="fitrahResult">
+                                <h4><i class="fas fa-hand-holding-heart"></i> Hasil Perhitungan</h4>
+                                <p>Total Zakat Fitrah: <span id="fitrahTotal" class="highlight">Rp 0</span></p>
+                                <p>Detail: <span id="fitrahDetail">-</span></p>
+                            </div>
+                            
+                            <div class="btn-group">
+                                <button class="btn-secondary" onclick="saveCalculation('fitrah')"><i class="fas fa-save"></i> Simpan</button>
+                                <button class="btn-secondary" onclick="printCalculation('fitrah')"><i class="fas fa-print"></i> Cetak</button>
+                                <button class="btn-secondary" onclick="resetForm('fitrah')"><i class="fas fa-redo"></i> Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="content" id="mal-content">
+                        <h3><i class="fas fa-coins"></i> Zakat Mal (Harta)</h3>
+                        <p>Zakat mal adalah zakat yang dikeluarkan dari harta kekayaan yang dimiliki seorang muslim setelah memenuhi syarat-syarat tertentu.</p>
+                        
+                        <div class="verse">
+                            "Ambillah zakat dari sebagian harta mereka, dengan zakat itu kamu membersihkan dan mensucikan mereka..."
+                            <div class="reference">QS. At-Taubah: 103</div>
+                        </div>
+                        
+                        <h3><i class="fas fa-list-check"></i> Ketentuan Zakat Mal</h3>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Nisab zakat mal setara dengan 85 gram emas</li>
+                            <li><i class="fas fa-check-circle"></i> Haul: harta telah dimiliki selama 1 tahun (354 hari hijriyah)</li>
+                            <li><i class="fas fa-check-circle"></i> Kadar zakat: 2.5% dari total harta (kecuali pertanian)</li>
+                            <li><i class="fas fa-check-circle"></i> Harta yang wajib dizakati: uang, emas, perak, investasi, dll</li>
+                        </ul>
+                        
+                        <div class="calculator-box">
+                            <div class="calculator-header">
+                                <div class="calculator-title">
+                                    <i class="fas fa-calculator"></i>
+                                    <h3>Kalkulator Zakat Mal</h3>
+                                </div>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="malType"><i class="fas fa-list"></i> Jenis Zakat Mal</label>
+                                <select id="malType" onchange="changeMalType()">
+                                    <option value="money">Uang/Tabungan</option>
+                                    <option value="gold">Emas/Perak</option>
+                                    <option value="agriculture">Pertanian/Perkebunan</option>
+                                    <option value="livestock">Peternakan</option>
+                                    <option value="trade">Perdagangan</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Input untuk Uang/Tabungan -->
+                            <div class="mal-type active" id="money-inputs">
+                                <div class="input-group">
+                                    <label for="savings"><i class="fas fa-money-bill-wave"></i> Jumlah Uang/Tabungan (Rp)</label>
+                                    <input type="number" id="savings" min="0" value="0">
+                                </div>
+                                <div class="input-group">
+                                    <label for="otherMoney"><i class="fas fa-coins"></i> Harta Likuid Lainnya (Rp)</label>
+                                    <input type="number" id="otherMoney" min="0" value="0">
+                                </div>
+                            </div>
+                            
+                            <!-- Input untuk Emas/Perak -->
+                            <div class="mal-type" id="gold-inputs">
+                                <div class="input-group">
+                                    <label for="goldWeight"><i class="fas fa-weight-hanging"></i> Berat Emas (gram)</label>
+                                    <input type="number" id="goldWeight" min="0" value="0" step="0.01">
+                                </div>
+                                <div class="input-group">
+                                    <label for="goldPriceGram"><i class="fas fa-tag"></i> Harga Emas per Gram (Rp)</label>
+                                    <input type="number" id="goldPriceGram" min="1000" value="1000000">
+                                </div>
+                                <div class="input-group">
+                                    <label for="silverWeight"><i class="fas fa-weight-hanging"></i> Berat Perak (gram)</label>
+                                    <input type="number" id="silverWeight" min="0" value="0" step="0.01">
+                                </div>
+                                <div class="input-group">
+                                    <label for="silverPriceGram"><i class="fas fa-tag"></i> Harga Perak per Gram (Rp)</label>
+                                    <input type="number" id="silverPriceGram" min="100" value="12000">
+                                </div>
+                            </div>
+                            
+                            <!-- Input untuk Pertanian -->
+                            <div class="mal-type" id="agriculture-inputs">
+                                <div class="input-group">
+                                    <label for="cropType"><i class="fas fa-seedling"></i> Jenis Hasil Panen</label>
+                                    <select id="cropType">
+                                        <option value="rice">Padi/Beras</option>
+                                        <option value="corn">Jagung</option>
+                                        <option value="wheat">Gandum</option>
+                                        <option value="other">Lainnya</option>
+                                    </select>
+                                </div>
+                                <div class="input-group">
+                                    <label for="cropAmount"><i class="fas fa-weight-hanging"></i> Jumlah Hasil Panen (kg)</label>
+                                    <input type="number" id="cropAmount" min="0" value="0">
+                                </div>
+                                <div class="input-group">
+                                    <label for="irrigationType"><i class="fas fa-tint"></i> Jenis Irigasi</label>
+                                    <select id="irrigationType">
+                                        <option value="rain">Air Hujan/Alami (zakat 10%)</option>
+                                        <option value="irrigated">Irigasi/Biaya (zakat 5%)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <!-- Input untuk Peternakan -->
+                            <div class="mal-type" id="livestock-inputs">
+                                <div class="input-group">
+                                    <label for="livestockType"><i class="fas fa-cow"></i> Jenis Ternak</label>
+                                    <select id="livestockType">
+                                        <option value="cow">Sapi/Kerbau</option>
+                                        <option value="goat">Kambing/Domba</option>
+                                        <option value="poultry">Unggas (Ayam, Bebek, dll)</option>
+                                    </select>
+                                </div>
+                                <div class="input-group">
+                                    <label for="livestockCount"><i class="fas fa-list-ol"></i> Jumlah Ternak</label>
+                                    <input type="number" id="livestockCount" min="0" value="0">
+                                </div>
+                            </div>
+                            
+                            <!-- Input untuk Perdagangan -->
+                            <div class="mal-type" id="trade-inputs">
+                                <div class="input-group">
+                                    <label for="businessAssets"><i class="fas fa-store"></i> Nilai Aset Usaha (Rp)</label>
+                                    <input type="number" id="businessAssets" min="0" value="0">
+                                </div>
+                                <div class="input-group">
+                                    <label for="businessProfit"><i class="fas fa-chart-line"></i> Keuntungan Bersih Tahunan (Rp)</label>
+                                    <input type="number" id="businessProfit" min="0" value="0">
+                                </div>
+                                <div class="input-group">
+                                    <label for="businessDebts"><i class="fas fa-file-invoice-dollar"></i> Hutang Usaha (Rp)</label>
+                                    <input type="number" id="businessDebts" min="0" value="0">
+                                </div>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="debts"><i class="fas fa-file-invoice-dollar"></i> Hutang Pribadi yang Harus Dibayar (Rp)</label>
+                                <input type="number" id="debts" min="0" value="0">
+                            </div>
+                            
+                            <button onclick="calculateMal()"><i class="fas fa-calculator"></i> Hitung Zakat Mal</button>
+                            
+                            <div class="result" id="malResult">
+                                <h4><i class="fas fa-hand-holding-heart"></i> Hasil Perhitungan</h4>
+                                <p>Nisab Zakat Mal: <span id="nisab" class="highlight">Rp 0</span></p>
+                                <p>Total Harta: <span id="totalWealth" class="highlight">Rp 0</span></p>
+                                <p>Harta Wajib Zakat: <span id="zakatableWealth" class="highlight">Rp 0</span></p>
+                                <p>Zakat Mal yang Harus Dibayar: <span id="malTotal" class="highlight">Rp 0</span></p>
+                                <p id="noZakatMessage" style="display: none;">Anda belum wajib membayar zakat mal karena harta Anda belum mencapai nisab.</p>
+                            </div>
+                            
+                            <div class="btn-group">
+                                <button class="btn-secondary" onclick="saveCalculation('mal')"><i class="fas fa-save"></i> Simpan</button>
+                                <button class="btn-secondary" onclick="printCalculation('mal')"><i class="fas fa-print"></i> Cetak</button>
+                                <button class="btn-secondary" onclick="resetForm('mal')"><i class="fas fa-redo"></i> Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="content" id="profesi-content">
+                        <h3><i class="fas fa-briefcase"></i> Zakat Profesi</h3>
+                        <p>Zakat profesi adalah zakat yang dikeluarkan dari penghasilan yang diperoleh dari profesi atau pekerjaan. Zakat ini dikeluarkan ketika menerima penghasilan dan tidak perlu menunggu haul (satu tahun).</p>
+                        
+                        <div class="verse">
+                            "Hai orang-orang yang beriman, infakkanlah (zakat) sebagian dari hasil usahamu yang baik-baik..."
+                            <div class="reference">QS. Al-Baqarah: 267</div>
+                        </div>
+                        
+                        <h3><i class="fas fa-list-check"></i> Ketentuan Zakat Profesi</h3>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Nisab zakat profesi setara dengan 85 gram emas</li>
+                            <li><i class="fas fa-check-circle"></i> Kadar zakat: 2.5% dari total penghasilan</li>
+                            <li><i class="fas fa-check-circle"></i> Dapat dibayarkan setiap bulan atau setiap menerima gaji</li>
+                            <li><i class="fas fa-check-circle"></i> Penghasilan yang dizakati adalah penghasilan bersih setelah dikurangi kebutuhan pokok</li>
+                        </ul>
+                        
+                        <div class="calculator-box">
+                            <div class="calculator-header">
+                                <div class="calculator-title">
+                                    <i class="fas fa-calculator"></i>
+                                    <h3>Kalkulator Zakat Profesi</h3>
+                                </div>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="monthlyIncome"><i class="fas fa-money-bill-wave"></i> Penghasilan Bulanan (Rp)</label>
+                                <input type="number" id="monthlyIncome" min="0" value="0">
+                            </div>
+                            <div class="input-group">
+                                <label for="otherIncome"><i class="fas fa-money-bill-alt"></i> Penghasilan Lainnya (Rp)</label>
+                                <input type="number" id="otherIncome" min="0" value="0">
+                            </div>
+                            <div class="input-group">
+                                <label for="monthlyExpenses"><i class="fas fa-file-invoice-dollar"></i> Pengeluaran Bulanan (Rp)</label>
+                                <input type="number" id="monthlyExpenses" min="0" value="0">
+                            </div>
+                            <div class="input-group">
+                                <label for="goldPrice"><i class="fas fa-tag"></i> Harga Emas per Gram (Rp)</label>
+                                <input type="number" id="goldPrice" min="1000" value="1000000">
+                            </div>
+                            <button onclick="calculateProfesi()"><i class="fas fa-calculator"></i> Hitung Zakat Profesi</button>
+                            
+                            <div class="result" id="profesiResult">
+                                <h4><i class="fas fa-hand-holding-heart"></i> Hasil Perhitungan</h4>
+                                <p>Nisab Zakat Profesi: <span id="profesiNisab" class="highlight">Rp 0</span></p>
+                                <p>Penghasilan Bersih: <span id="netIncome" class="highlight">Rp 0</span></p>
+                                <p>Zakat Profesi yang Harus Dibayar: <span id="profesiTotal" class="highlight">Rp 0</span></p>
+                                <p id="noProfesiZakatMessage" style="display: none;">Anda belum wajib membayar zakat profesi karena penghasilan Anda belum mencapai nisab.</p>
+                            </div>
+                            
+                            <div class="btn-group">
+                                <button class="btn-secondary" onclick="saveCalculation('profesi')"><i class="fas fa-save"></i> Simpan</button>
+                                <button class="btn-secondary" onclick="printCalculation('profesi')"><i class="fas fa-print"></i> Cetak</button>
+                                <button class="btn-secondary" onclick="resetForm('profesi')"><i class="fas fa-redo"></i> Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recipients">
+            <h2><i class="fas fa-hand-holding-usd"></i> Penerima Zakat (Mustahiq)</h2>
+            <p>Zakat hanya boleh diberikan kepada 8 golongan (asnaf) yang telah ditentukan dalam Al-Qur'an. Berikut adalah golongan-golongan yang berhak menerima zakat:</p>
+            
+            <div class="recipients-grid">
+                <div class="recipient-card">
+                    <div class="recipient-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Fakir</h3>
+                    <p>Orang yang hampir tidak memiliki harta dan tidak mampu memenuhi kebutuhan pokok hidupnya.</p>
+                </div>
+                
+                <div class="recipient-card">
+                    <div class="recipient-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Miskin</h3>
+                    <p>Orang yang memiliki harta tetapi tidak cukup untuk memenuhi kebutuhan dasar hidupnya.</p>
+                </div>
+                
+                <div class="recipient-card">
+                    <div class="recipient-icon">
+                        <i class="fas fa-user-cog"></i>
+                    </div>
+                    <h3>Amil</h3>
+                    <p>Orang yang mengumpulkan, mengelola, dan mendistribusikan zakat.</p>
+                </div>
+                
+                <div class="recipient-card">
+                    <div class="recipient-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Mualaf</h3>
+                    <p>Orang yang baru masuk Islam dan membutuhkan bantuan untuk menguatkan iman dan syariat.</p>
+                </div>
+                
+                <div class="recipient-card">
+                    <div class="recipient-icon">
+                        <i class="fas fa-shackles"></i>
+                    </div>
+                    <h3>Riqab</h3>
+                    <p>Budak atau hamba sahaya yang ingin memerdekakan dirinya.</p>
+                </div>
+                
+                <div class="recipient-card">
+                    <div class="recipient-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3>Gharimin</h3>
+                    <p>Orang yang berhutang untuk memenuhi kebutuhan hidup yang halal dan tidak mampu melunasi hutangnya.</p>
+                </div>
+                
+                <div class="recipient-card">
+                    <div class="recipient-icon">
+                        <i class="fas fa-fist-raised"></i>
+                    </div>
+                    <h3>Fisabilillah</h3>
+                    <p>Orang yang berjuang di jalan Allah dalam bentuk dakwah, jihad, dan kegiatan keagamaan lainnya.</p>
+                </div>
+                
+                <div class="recipient-card">
+                    <div class="recipient-icon">
+                        <i class="fas fa-hiking"></i>
+                    </div>
+                    <h3>Ibnu Sabil</h3>
+                    <p>Musafir yang kehabisan bekal di perjalanan walaupun dia kaya di negerinya.</p>
+                </div>
+            </div>
+            
+            <div class="verse">
+                "Sesungguhnya zakat-zakat itu hanyalah untuk orang-orang fakir, orang-orang miskin, pengurus-pengurus zakat, para mualaf yang dibujuk hatinya, untuk (memerdekakan) budak, orang-orang yang berhutang, untuk jalan Allah dan untuk mereka yang sedang dalam perjalanan, sebagai suatu ketetapan yang diwajibkan Allah, dan Allah Maha Mengetahui lagi Maha Bijaksana."
+                <div class="reference">QS. At-Taubah: 60</div>
+            </div>
+        </section>
+
+        <section id="faq">
+            <h2><i class="fas fa-question-circle"></i> Pertanyaan Umum (FAQ)</h2>
+            <p>Berikut adalah beberapa pertanyaan umum seputar zakat beserta jawabannya:</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Apa perbedaan antara zakat fitrah dan zakat mal?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Zakat fitrah adalah zakat yang wajib dikeluarkan setiap muslim di bulan Ramadan, sedangkan zakat mal adalah zakat harta yang wajib dikeluarkan ketika harta telah mencapai nisab dan haul. Zakat fitrah dibayar dalam bentuk makanan pokok (beras) atau uang yang setara, sementara zakat mal dibayar sebesar 2.5% dari total harta.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Berapa besaran nisab zakat mal?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nisab zakat mal setara dengan 85 gram emas. Artinya, jika harta yang dimiliki telah mencapai nilai 85 gram emas dan telah dimiliki selama satu tahun (haul), maka wajib mengeluarkan zakat sebesar 2.5% dari total harta tersebut.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Kapan zakat fitrah harus dibayarkan?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Zakat fitrah harus dibayarkan mulai dari awal bulan Ramadan hingga sebelum shalat Idul Fitri. Waktu yang paling utama adalah pada hari terakhir bulan Ramadan setelah terbenamnya matahari hingga sebelum shalat Idul Fitri.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Apakah hutang mempengaruhi kewajiban zakat mal?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya, hutang yang harus segera dibayar dapat mengurangi jumlah harta yang wajib dizakati. Jika setelah dikurangi hutang, harta yang dimiliki tidak mencapai nisab, maka tidak wajib mengeluarkan zakat mal.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Bisakah zakat diberikan kepada selain 8 golongan mustahiq?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tidak, zakat hanya boleh diberikan kepada 8 golongan mustahiq yang telah ditetapkan dalam Al-Qur'an (QS. At-Taubah: 60). Memberikan zakat kepada selain 8 golongan tersebut tidak sah dan tidak menggugurkan kewajiban zakat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2><i class="fas fa-envelope"></i> Kontak dan Informasi</h2>
+            <p>Jika Anda memiliki pertanyaan lebih lanjut tentang zakat atau kesulitan menggunakan kalkulator ini, silakan hubungi kami melalui informasi di bawah ini:</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3><i class="fas fa-info-circle"></i> Informasi Kontak</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Alamat</strong>
+                            <p>Jl. Zakat No. 123, Jakarta Selatan, Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Telepon</strong>
+                            <p>+62 21 1234 5678</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <p>info@kalkulatorzakat.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <strong>Website</strong>
+                            <p>www.kalkulatorzakat.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3><i class="fas fa-paper-plane"></i> Kirim Pesan</h3>
+                    <div class="input-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" rows="5"></textarea>
+                    </div>
+                    <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i> Kirim Pesan</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-mosque"></i> Kalkulator Zakat</h3>
+                <p>Sebuah platform untuk membantu umat Islam menghitung kewajiban zakat dengan mudah dan akurat sesuai syariat Islam.</p>
+            </div>
+            <div class="footer-section">
+                <h3><i class="fas fa-link"></i> Tautan Cepat</h3>
+                <ul>
+                    <li><a href="#intro">Pengertian Zakat</a></li>
+                    <li><a href="#calculators">Kalkulator Zakat</a></li>
+                    <li><a href="#recipients">Penerima Zakat</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3><i class="fas fa-share-alt"></i> Bagikan</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Kalkulator Zakat Lengkap. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
